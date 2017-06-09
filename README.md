@@ -6,7 +6,7 @@ Uses EasyHook to inject inside the game.
 
 ## How to?
 
-* Go to the release page, and get the latest release. 
+* Go to the [release page](https://github.com/WydD/kof-xiv-input-frames/releases), and get the latest release. 
 * Extract the zip archive somewhere
 * Launch your game
 * Launch the provided exe
