@@ -21,13 +21,12 @@ int _tmain(int argc, _TCHAR* argv[])
 		std::wcout << "Press Enter to exit\n";
 		std::wstring input;
 		std::getline(std::wcin, input);
-		std::getline(std::wcin, input);
 		return 1;
 	}
 	DWORD processId;
 	GetWindowThreadProcessId(winhandle, &processId);
 
-	WCHAR* dllToInject = L"BeepHook.dll";
+	WCHAR* dllToInject = L"input_display_hook.dll";
 	wprintf(L"Attempting to inject: %s\n\n", dllToInject);
 
 	// Inject dllToInject into the target process Id, passing 
@@ -53,9 +52,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		std::wcout << L"Library injected successfully.\n";
 	}
 
-	std::wcout << "Press Enter to exit";
+	std::wcout << "Everything is alright\nPress Enter to exit";
 	std::wstring input;
-	std::getline(std::wcin, input);
 	std::getline(std::wcin, input);
 	return 0;
 }
