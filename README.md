@@ -2,6 +2,8 @@
 
 Display frame count aside from inputs inside KOF XIV (it works in beta at least, and it should be stable enough).
 
+![](result.png?raw=true)
+
 Uses EasyHook to inject inside the game.
 
 ## How to?
